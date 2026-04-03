@@ -1,6 +1,6 @@
 {
     "name": "Sigmio Final",
-    "icon": "bf",
+    "icon": "sigmio-final-pixel",
     "offset": [
         0,
 		0
@@ -9,6 +9,7 @@
         500,
         300
     ],
+    "healthBarColor": "#FFF800",
     "fileName": "sigmio-final",
     "scale": 1.5,
     "animations": [

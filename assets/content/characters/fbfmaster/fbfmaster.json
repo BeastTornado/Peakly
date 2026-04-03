@@ -1,6 +1,6 @@
 {
     "name": "fbfmaster",
-    "icon": "bf",
+    "icon": "fbf",
     "offset": [
 		200,
 		225
@@ -9,6 +9,7 @@
 		200,
 		175
     ],
+    "healthBarColor": "#8C5050",
     "fileName": "fbfmaster",
     "animations": [
         {

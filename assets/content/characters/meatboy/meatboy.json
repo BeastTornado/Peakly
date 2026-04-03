@@ -1,13 +1,14 @@
 {
     "name": "Meatboy",
-    "icon": "bf",
+    "icon": "meatboy",
+    "healthBarColor": "#B80202",
     "offset": [
         -30,
         650
     ],
     "camOffset": [
         120,
-        70
+        0
     ],
     "fileName": "meatboy",
     "animations": [

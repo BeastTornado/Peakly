@@ -1,6 +1,6 @@
 {
     "name": "tweenmaster",
-    "icon": "bf",
+    "icon": "tween",
     "offset": [
 		200,
 		230
@@ -9,6 +9,7 @@
         75,
         250
     ],
+    "healthBarColor": "#FFFFFF",
     "fileName": "tweenmaster",
     "animations": [
         {

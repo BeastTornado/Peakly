@@ -13,8 +13,8 @@ class Bar extends FlxSpriteGroup{
 
     var barColors:Array<FlxColor> = [];
 
-    private var leftBar:FlxSprite;
-    private var rightBar:FlxSprite;
+    public var leftBar:FlxSprite;
+    public var rightBar:FlxSprite;
 
     public function new(width:Int, height:Int, ?colors:Array<FlxColor> = null, ?upperBound:Float = 1, ?defaultValue:Float = 0, ?lowerBound:Float = 0, ?x:Float = 0, ?y:Float = 0){
         super(x, y);
@@ -32,16 +32,18 @@ class Bar extends FlxSpriteGroup{
             this.barColors = colors;
         } 
 
-        this.leftBar = new FlxSprite().makeGraphic(this.barWidth, this.barHeight, barColors[0]);
+        this.leftBar = new FlxSprite().makeGraphic(this.barWidth, this.barHeight, FlxColor.WHITE);
         this.leftBar.x = x;
         this.leftBar.y = y;
+        this.leftBar.color = barColors[0];
         this.add(this.leftBar);
 
-        this.rightBar = new FlxSprite().makeGraphic(this.barWidth, this.barHeight, barColors[1]);
+        this.rightBar = new FlxSprite().makeGraphic(this.barWidth, this.barHeight, FlxColor.WHITE);
         this.rightBar.scale.set(this.percentage, 1);
         this.rightBar.updateHitbox();
         this.rightBar.x = this.leftBar.x + this.leftBar.width - this.rightBar.width;
         this.rightBar.y = y;
+        this.rightBar.color = barColors[1];
         this.add(this.rightBar);
     }
 
@@ -53,5 +55,10 @@ class Bar extends FlxSpriteGroup{
         this.rightBar.scale.set(this.percentage, 1);
         this.rightBar.updateHitbox();
         this.rightBar.x = this.leftBar.x + this.leftBar.width - this.rightBar.width;
+    }
+
+    public function changeColors(left:FlxColor, right:FlxColor) {
+        this.leftBar.color = left;
+        this.rightBar.color = right;
     }
 }

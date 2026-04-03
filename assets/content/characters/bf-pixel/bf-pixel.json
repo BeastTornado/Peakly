@@ -1,6 +1,6 @@
 {
     "name": "Jo560hs Retro",
-    "icon": "bf",
+    "icon": "bf-pixel",
     "offset": [
         0,
         350
@@ -11,6 +11,7 @@
     ],
     "scale": 6,
     "antialiasing": false,
+    "healthBarColor": "#6256EB",
     "fileName": "spiritfakeout",
     "animations": [
         {

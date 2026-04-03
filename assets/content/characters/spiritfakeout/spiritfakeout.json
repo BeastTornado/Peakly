@@ -1,6 +1,6 @@
 {
     "name": "Spirit Faker",
-    "icon": "bf",
+    "icon": "spirit-bad-pixel",
     "offset": [
         -550,
 		-300
@@ -11,6 +11,7 @@
     ],
     "fileName": "spiritfakeout",
     "scale": 6,
+    "healthBarColor": "#FF3C6E",
     "animations": [
         {
             "name": "Idle",
